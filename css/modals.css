@@ -1,0 +1,61 @@
+/* Ventanas emergentes y formularios */
+#ov {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(10, 18, 40, 0.6);
+  align-items: flex-start;
+  justify-content: center;
+  padding: max(16px, env(safe-area-inset-top, 0px)) 12px 12px;
+  overflow: auto;
+  z-index: 5;
+}
+.sheet {
+  background: var(--card);
+  border-radius: 20px;
+  padding: 20px;
+  width: 100%;
+  max-width: 560px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 5vh;
+}
+.sheet h2 {
+  margin: 0;
+  font-size: 24px;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  font-size: 15px;
+}
+.opt {
+  border: 1px solid var(--line);
+  background: var(--card);
+  border-radius: 12px;
+  padding: 14px;
+  text-align: left;
+  cursor: pointer;
+}
+.opt.on {
+  background: var(--acc);
+  color: var(--accink);
+  border-color: var(--acc);
+}
+.tw {
+  overflow-x: auto;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+  min-width: 480px;
+  font-size: 15px;
+}
+th,
+td {
+  text-align: left;
+  padding: 9px 8px;
+  border-bottom: 1px solid var(--line);
+}

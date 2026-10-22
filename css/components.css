@@ -1,0 +1,179 @@
+/* Componentes: contadores, chips, tarjetas, botones */
+.cnt {
+  display: flex;
+  gap: 8px;
+}
+.cnt div {
+  flex: 1;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 12px;
+}
+.cnt b {
+  font-size: 26px;
+  display: block;
+}
+.chips {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.chip,
+.btn2 {
+  border: 1px solid var(--line);
+  background: var(--card);
+  border-radius: 20px;
+  padding: 10px 16px;
+  cursor: pointer;
+}
+.chip.on {
+  background: var(--ink);
+  color: var(--bg);
+  border-color: var(--ink);
+}
+select,
+input,
+textarea {
+  width: 100%;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 12px;
+  min-height: 44px;
+}
+.card {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  width: 100%;
+  text-align: left;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 14px;
+  cursor: pointer;
+}
+.card .r {
+  text-align: right;
+  white-space: nowrap;
+}
+.card span {
+  display: block;
+}
+.v {
+  color: var(--red);
+}
+.p {
+  color: var(--amb);
+}
+.ok {
+  color: var(--ok);
+}
+.tag {
+  display: inline-block;
+  margin-top: 6px;
+  font-size: 12px;
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 2px 8px;
+}
+#fab {
+  position: fixed;
+  left: 16px;
+  right: 16px;
+  max-width: 528px;
+  margin: 0 auto;
+  bottom: calc(16px + env(safe-area-inset-bottom, 0px));
+  height: 56px;
+  border: 0;
+  border-radius: 14px;
+  background: var(--acc);
+  color: var(--accink);
+  font-weight: 700;
+  font-size: 17px;
+  cursor: pointer;
+}
+.pri {
+  width: 100%;
+  height: 52px;
+  border: 0;
+  border-radius: 14px;
+  background: var(--acc);
+  color: var(--accink);
+  font-weight: 700;
+  cursor: pointer;
+}
+.link {
+  background: none;
+  border: 0;
+  color: var(--mute);
+  padding: 12px;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+/* Vistas por cliente y tablas */
+.titulo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+.titulo h2 {
+  margin: 0;
+  font-size: 22px;
+}
+.tabla {
+  min-width: 0;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  overflow: hidden;
+}
+.tabla th {
+  font-size: 13px;
+  color: var(--mute);
+  font-weight: 500;
+  background: var(--bg);
+}
+.tabla .num {
+  text-align: center;
+}
+.tabla td.num {
+  font-weight: 700;
+}
+.celda {
+  display: block;
+  width: 100%;
+  background: none;
+  border: 0;
+  padding: 0;
+  text-align: left;
+  cursor: pointer;
+}
+.celda > * {
+  display: block;
+}
+.volver {
+  align-self: flex-start;
+  padding: 4px 0;
+}
+.vacio {
+  text-align: center;
+  padding: 30px 0;
+  color: var(--mute);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.aviso-cli {
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 15px;
+}

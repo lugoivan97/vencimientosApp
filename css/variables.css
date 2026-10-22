@@ -1,0 +1,42 @@
+/* Colores y temas (claro/oscuro) */
+:root {
+  --bg: #f2f5fb;
+  --card: #fff;
+  --ink: #0f1b33;
+  --mute: #5b6784;
+  --acc: #2457d6;
+  --accink: #fff;
+  --red: #b3261e;
+  --amb: #965a05;
+  --ok: #2a4fa8;
+  --line: #dde3f0;
+  box-sizing: border-box;
+  padding-top: env(safe-area-inset-top, 0px);
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0c1426;
+    --card: #141e36;
+    --ink: #e8eefc;
+    --mute: #9aa7c7;
+    --acc: #6c95ff;
+    --accink: #0c1426;
+    --red: #ff8a80;
+    --amb: #f4b860;
+    --ok: #8fb0ff;
+    --line: #26324f;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0c1426;
+  --card: #141e36;
+  --ink: #e8eefc;
+  --mute: #9aa7c7;
+  --acc: #6c95ff;
+  --accink: #0c1426;
+  --red: #ff8a80;
+  --amb: #f4b860;
+  --ok: #8fb0ff;
+  --line: #26324f;
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Vencimientos",
+  "short_name": "Vencimientos",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#F2F5FB",
+  "theme_color": "#2457D6",
+  "icons": [{ "src": "assets/icon.svg", "sizes": "any", "type": "image/svg+xml" }]
+}

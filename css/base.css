@@ -1,0 +1,47 @@
+/* Base: reset, tipografía y layout general */
+html {
+  height: 100%;
+}
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font:
+    16px "DM Sans",
+    system-ui,
+    sans-serif;
+}
+* {
+  box-sizing: border-box;
+}
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  color: inherit;
+}
+header {
+  max-width: 560px;
+  margin: 0 auto;
+  padding: 20px 16px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+h1 {
+  margin: 0;
+  font-size: 28px;
+}
+.m {
+  font-size: 13px;
+  color: var(--mute);
+}
+#app {
+  max-width: 560px;
+  margin: 0 auto;
+  padding: 16px 16px 110px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}

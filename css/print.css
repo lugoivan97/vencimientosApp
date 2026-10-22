@@ -1,0 +1,30 @@
+/* Estilos de impresión del reporte */
+@media print {
+  #app,
+  #fab,
+  header,
+  .noprint {
+    display: none !important;
+  }
+  body {
+    background: #fff;
+    color: #000;
+  }
+  #ov {
+    position: static;
+    display: block !important;
+    background: #fff;
+    padding: 0;
+  }
+  .sheet {
+    box-shadow: none;
+    margin: 0;
+    padding: 0;
+    max-width: none;
+    background: #fff;
+  }
+  :root {
+    --ink: #000;
+    --mute: #444;
+  }
+}
